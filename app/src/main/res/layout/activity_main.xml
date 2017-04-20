@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.nubia.oauthnormaldemo.MainActivity">
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/param_name_clientid"/>
+
+        <EditText
+            android:id="@+id/appId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/param_name_clientid"/>
+
+        <TextView
+            android:id="@+id/tv_redirect_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/param_name_redirecturl"/>
+
+        <EditText
+            android:id="@+id/et_redirect_url"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/param_name_redirecturl"
+            android:inputType="textUri"
+            android:textSize="12sp"/>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:columnCount="2">
+
+        <CheckBox
+            android:id="@+id/cb_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scope_userinfo_profile"/>
+
+        <CheckBox
+            android:id="@+id/cb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scope_userinfo_all"/>
+
+        <CheckBox
+            android:id="@+id/skipConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tips_skip_comfire"/>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/bt_get_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_code"
+            android:textAllCaps="false"/>
+
+        <requestFocus/>
+
+        <Button
+            android:id="@+id/bt_get_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_token"
+            android:textAllCaps="false">
+        </Button>
+
+        <Button
+            android:id="@+id/bt_get_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_open"/>
+
+        <Button
+            android:id="@+id/bt_get_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_all"/>
+
+        <Button
+            android:id="@+id/bt_to_certification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/certification"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_web_syn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/web_syn_login"/>
+
+        <Button
+            android:id="@+id/bt_get_token_by_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_token_by_code"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_refresh_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh_token"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/bt_internal_token"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/internal_token"
+            android:textAllCaps="false"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_response"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="@string/response_default"/>
+</LinearLayout>

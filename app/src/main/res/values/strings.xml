@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">OAuthNormalDemo</string>
+    <string name="certification">实名认证</string>
+    <string name="web_syn_login">web同步登录</string>
+    <string name="get_code">获取code</string>
+    <string name="get_token">获取token</string>
+    <string name="get_open">获取用户公开信息</string>
+    <string name="get_all">获取用户所有信息</string>
+    <string name="response_default">返回信息：</string>
+    <string name="refresh_token">refreshToken</string>
+    <string name="internal_token">getUidByCode</string>
+    <string name="get_token_by_code">getTokenByCode</string>
+    <string name="param_name_clientid">clientId</string>
+    <string name="param_name_redirecturl">redirectUrl</string>
+    <string name="scope_userinfo_profile">userinfo_profile</string>
+    <string name="scope_userinfo_all">userinfo_all</string>
+    <string name="tips_skip_comfire">跳过授权页面</string>
+</resources>
